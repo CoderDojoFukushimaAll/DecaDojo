@@ -1,2 +1,2 @@
-# DekaDojo2023
-First Deka Dojo, joint CoderDojo at Fukushima
+# DecaDojo2023
+First Deca Dojo, joint CoderDojo at Fukushima
