@@ -1,2 +1,3 @@
-# DecaDojo2023
-First Deca Dojo, joint CoderDojo at Fukushima
+# 福島でかドージョー2023
+
+[Wiki](https://github.com/CoderDojoFukushimaAll/DecaDojo2023/wiki) をご覧ください。
