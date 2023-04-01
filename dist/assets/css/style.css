@@ -561,7 +561,7 @@ BODY {
 .background {
   background: url(../../assets/images/mainvisual.jpg) no-repeat center top;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 20px;
 }
 
@@ -569,8 +569,7 @@ BODY {
   position: relative;
   width: 100%;
   max-width: 548px;
-  height: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
   z-index: 3;
