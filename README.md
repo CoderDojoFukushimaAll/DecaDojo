@@ -12,3 +12,5 @@ https://decadojo.fukushima-coderdojo.com/
 # イベント概要・議事録など
 
 [Wiki](https://github.com/CoderDojoFukushimaAll/DecaDojo2023/wiki) をご覧ください。
+
+### test
