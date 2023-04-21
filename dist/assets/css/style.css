@@ -1,6 +1,7 @@
 /*!********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/css/style.scss ***!
   \********************************************************************************************************************/
+@charset "UTF-8";
 /*!
  * Bootstrap Reboot v5.3.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -556,16 +557,23 @@ BODY {
   background-color: #171f3b;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 .background {
-  background: url(../../assets/images/mainvisual.jpg) no-repeat center top;
-  background-size: cover;
-  min-height: 100vh;
-  padding: 0 20px;
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  height: 100%;
+  display: flex;
+}
+.background IMG {
+  width: 140%;
+  height: 140%;
 }
 
 .main {
+  z-index: 10;
   position: relative;
   width: 100%;
   max-width: 548px;
@@ -575,7 +583,6 @@ BODY {
   z-index: 3;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-  padding: 20px 30px;
 }
 
 @media (min-width: 860px) {
@@ -584,8 +591,128 @@ BODY {
     margin-right: 160px;
   }
 }
+.container {
+  padding: 20px 30px;
+}
+
 H1 {
   padding: 50px 0;
+}
+
+.content_title {
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 0.75em 1em;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  border-top: solid 3px #000;
+  border-bottom: solid 3px #000;
+  margin: 2rem 0 0 0;
+}
+.content_title:before {
+  content: "";
+  height: 60%;
+  position: absolute;
+  display: inline-block;
+  border-left: solid 3px #000;
+  top: 0;
+  left: 0;
+}
+.content_title:after {
+  content: "";
+  height: 60%;
+  position: absolute;
+  display: inline-block;
+  border-right: solid 3px #000;
+  bottom: 0;
+  right: 0;
+}
+.content_title_en {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+P {
+  line-height: 1.8;
+  padding-bottom: 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.datalist {
+  display: flex;
+  flex-wrap: wrap;
+}
+.datalist DT {
+  width: 50px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+.datalist DD {
+  width: calc(100% - 66px);
+  margin-bottom: 16px;
+}
+
+.entry {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 48px 24px;
+  margin: 24px 0;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.btn {
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  padding: 24px 24px 24px 48px;
+  border: 5px solid #fff;
+  border-radius: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-neon {
+  animation: flicker 1.5s infinite alternate;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1;
+}
+.btn-neon:after {
+  content: "→";
+  margin-left: 24px;
+}
+.btn-off {
+  color: #999;
+  border: 5px solid #999;
+  padding: 24px 48px;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: -0.1rem -0.1rem 0.5rem #fff, 0.1rem 0.1rem 0.5rem #fff, 0 0 1rem #f40, 0 0 2rem #f40, 0 0 3rem #f40, 0 0 4rem #f40, 0 0 5rem #f40;
+    box-shadow: 0 0 0.2rem #fff, inset 0 0 0.2rem #fff, 0 0 1rem #08f, inset 0 0 1rem #08f, 0 0 2rem #08f, inset 0 0 2rem #08f;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
+#caoution {
+  border-radius: 4px;
+  border: 3px solid #c00;
+  padding: 16px 8px 4px 8px;
+  color: #c00;
+  background: #fee;
 }
 
 /*# sourceMappingURL=style.css.map*/
