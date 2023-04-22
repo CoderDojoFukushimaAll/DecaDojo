@@ -564,9 +564,15 @@ BODY {
   z-index: 1;
   top: 0;
   position: fixed;
+  height: 100vh;
   display: flex;
   align-items: center;
-  height: 100vh;
+}
+@media (min-width: 860px) {
+  .background {
+    display: block;
+    align-items: first;
+  }
 }
 .background IMG {
   height: 80%;
