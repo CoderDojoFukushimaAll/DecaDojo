@@ -731,4 +731,22 @@ P {
   background: #fee;
 }
 
+.sponsor-list {
+  margin: 0 0 24px 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.sponsor-list LI {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sponsor-list LI IMG {
+  border: 1px solid #ccc;
+  height: auto;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map*/
