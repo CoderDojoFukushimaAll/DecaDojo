@@ -695,6 +695,7 @@ P {
   border-radius: 1rem;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
 }
 .btn-neon {
   animation: flicker 1.5s infinite alternate;
@@ -770,6 +771,14 @@ P {
   border: 1px solid #ccc;
   height: auto;
   width: 100%;
+}
+
+.links {
+  margin-bottom: 40px;
+}
+.links LI {
+  font-size: 26px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map*/
