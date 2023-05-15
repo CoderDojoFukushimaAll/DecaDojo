@@ -1,0 +1,152 @@
+BODY {
+  margin: 0;
+  padding: 0;
+}
+
+#monitor {
+  width: 100vw;
+  height: 100vh;
+  background: #FFC;
+}
+#monitor-inner {
+  padding: 40px;
+}
+.monitor-center {
+  width: calc(100vw - 80px);
+  height: calc(100vh - 80px);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.topitems {
+  width: 25%;
+  text-align: center;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+}
+
+.topitems .items-thumbnail {
+  padding: 0 10px;
+}
+
+.topitems .items-thumbnail IMG {
+  width: 100%;
+  height: auto;
+}
+.topitems .items-name {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+.topitems .items-num {
+  font-size: 40px;
+  line-height: 1.4;
+  word-break: break-all;
+  font-weight: bold;
+}
+
+.nextbutton {
+  position: absolute;
+  text-align: center;
+  bottom: 80px;
+  display: block;
+  width: calc(100% - 40px);
+}
+
+.nextbutton A {
+  color: #fff;
+  background-color: #eb6100;
+  border-radius: 10px;
+  padding: 20px 40px;
+  -webkit-box-shadow: 0 5px 0 #992200;
+  box-shadow: 0 5px 0 #e6d900;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nextbutton A:hover {
+  color: #fff;
+  background: #f56500;
+  -webkit-transform: translate(0, 3px);
+  transform: translate(0, 3px);
+  -webkit-box-shadow: 0 2px 0 #e6d900;
+  box-shadow: 0 2px 0 #e6d900;
+}
+
+
+
+.items {
+  width: 33.3%;
+  display: flex;
+}
+
+.items:nth-child(1){
+  width: 100%;
+}
+.items:nth-child(11),
+.items:nth-child(12){
+  width: 50%;
+}
+
+.items .items-thumbnail {
+  width: 100px;
+  padding: 20px 10px 20px 0;
+}
+.items .items-thumbnail IMG {
+  width: 100px;
+  height: 100px;
+}
+.items-detail {
+  padding: 20px 10px 20px 0;
+}
+.items-name {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+.items-num {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+a.button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  background-color: #eb6100;
+  border-radius: 50%;
+  line-height: 100px;
+  width: 500px;
+  height: 500px;
+  padding: 0;
+  -webkit-box-shadow: 0 5px 0 #992200;
+  box-shadow: 0 5px 0 #e6d900;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+a.button:hover {
+  color: #fff;
+  background: #f56500;
+  -webkit-transform: translate(0, 3px);
+  transform: translate(0, 3px);
+  -webkit-box-shadow: 0 2px 0 #e6d900;
+  box-shadow: 0 2px 0 #e6d900;
+}
+
+.shuffle {
+  white-space: nowrap;
+}
