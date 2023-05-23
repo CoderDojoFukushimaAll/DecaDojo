@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script type="module">
 /* fisher-yates shuffle */
 const shuffle = (array) => {
     const res = [...array];
@@ -27,11 +32,11 @@ const lottery = (itemNumbers, ninjaNumber) => {
     const winner = [];
     let start = 0;
     for (const itemNumber of itemNumbers) {
-        winner.push(shuffledNinjaArray.slice(start, start + itemNumber));
+        winner.push(itemNumber !== -1 ? `[${shuffledNinjaArray.slice(start, start + itemNumber).join(',')}],` : '\n');
         start += itemNumber;
     }
     
-    return winner;
+    return winner.join('\n');
 };
 
 const itemNumbers = [
@@ -39,12 +44,20 @@ const itemNumbers = [
     3, /* micro:bit v1 */
     3, /* Raspberry Pi公式Tシャツ */
     1, /* 米 */
+    -1, /* 1ページ目と2ページ目の切替 */
     4, /* Scratchドリル Tシャツ */
     5, /* はじめようAIプログラミング 冊子 */
     1, /* Apitor(未開封新品) */
     3, /* 書籍 */
 ];
 
-const ninjaNumber = 100;
+const url = new URL(window.location.href);
+const ninjaNumber = Number(url.searchParams.get('max'));
 
-console.log(lottery(itemNumbers, ninjaNumber))
+document.body.querySelector('pre').textContent = lottery(itemNumbers, ninjaNumber);
+        </script>
+    </head>
+    <body>
+        <pre></pre>
+    </body>
+</html>
