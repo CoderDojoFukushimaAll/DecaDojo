@@ -25,8 +25,8 @@ console.log(result);
 */
 
 const lottery = (itemNumbers, ninjaNumber) => {
-    /* 0 から ninjaNunber - 1 までのnumberのarray */
-    const ninjaArray = [...Array(ninjaNumber).keys()];
+    /* 1 から ninjaNunber までのnumberのarray */
+    const ninjaArray = [...Array(ninjaNumber).keys()].map(n => n + 1);
     const shuffledNinjaArray = shuffle(ninjaArray);
 
     const winner = [];
