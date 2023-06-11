@@ -25,14 +25,14 @@ console.log(result);
 */
 
 const lottery = (itemNumbers, ninjaNumber) => {
-    /* 0 から ninjaNunber - 1 までのnumberのarray */
-    const ninjaArray = [...Array(ninjaNumber).keys()];
+    /* 1 から ninjaNunber までのnumberのarray */
+    const ninjaArray = [...Array(ninjaNumber).keys()].map(n => n + 1);
     const shuffledNinjaArray = shuffle(ninjaArray);
 
     const winner = [];
     let start = 0;
     for (const itemNumber of itemNumbers) {
-        winner.push(itemNumber !== -1 ? `[${shuffledNinjaArray.slice(start, start + itemNumber).join(',')}],` : '\n');
+        winner.push(itemNumber !== 0 ? `[${shuffledNinjaArray.slice(start, start + itemNumber).join(',')}],` : '\n');
         start += itemNumber;
     }
     
@@ -43,7 +43,7 @@ const itemNumbers = [
     1, /* Apitor（アプティオ） */
     1, /* "Tello（テロー） */
     1, /* micro:Maqueen（マックイーン） */
-    -1, /* 1ページ目と2ページ目の切替 */
+    0, /* 1ページ目と2ページ目の切替 */
     9, /* micro:bit v2 */
     3, /* micro:bit v1 */
     3, /* Raspberry PI公式Tシャツ & Pico W */
