@@ -720,6 +720,14 @@ P {
   content: "→";
   margin-left: 24px;
 }
+.btn-neon-disabled {
+  text-decoration: line-through;
+  font-weight: bold;
+  line-height: 1;
+  padding: 24px;
+  color: #999;
+  border: 5px solid #999;
+}
 .btn-primary {
   background: #000;
   padding: 20px 30px;
