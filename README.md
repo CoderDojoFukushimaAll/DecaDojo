@@ -1,4 +1,4 @@
-# 福島でかドージョー2023
+# 福島でかドージョー
 
 # 公式WEBサイト
 
@@ -11,4 +11,4 @@ https://decadojo.fukushima-coderdojo.com/
 
 # イベント概要・議事録など
 
-[Wiki](https://github.com/CoderDojoFukushimaAll/DecaDojo2023/wiki) をご覧ください。
+[Wiki](https://github.com/CoderDojoFukushimaAll/DecaDojo/wiki) をご覧ください。
