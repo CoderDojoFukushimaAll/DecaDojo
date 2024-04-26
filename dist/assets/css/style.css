@@ -554,7 +554,7 @@ progress {
 }
 
 BODY {
-  background-color: #171f3b;
+  background-color: #5f8de4;
   padding: 0;
   margin: 0;
   position: relative;
@@ -698,23 +698,37 @@ P {
   margin: 0 auto 40px auto;
 }
 
-.btn {
-  font-size: 20px;
-  font-style: italic;
-  letter-spacing: 0.3rem;
-  color: #fff;
-  padding: 24px 24px 24px 48px;
-  border: 5px solid #fff;
-  border-radius: 1rem;
-  text-decoration: none;
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
   display: inline-block;
+  padding: 1rem 4rem;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
 }
 .btn-neon {
   animation: flicker 1.5s infinite alternate;
   text-decoration: none;
   font-weight: bold;
   line-height: 1;
+}
+a.btn--blue.btn--border-double {
+  border: 8px double #0090bb;
 }
 .btn-neon:after {
   content: "→";
@@ -802,4 +816,10 @@ P {
   font-weight: bold;
 }
 
+.box-shadow {
+  box-shadow: 0 0 10px black;
+}
+.drop-shadow {
+  filter: drop-shadow(0 0 10px black);
+}
 /*# sourceMappingURL=style.css.map*/
